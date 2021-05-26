@@ -20,7 +20,9 @@ print("The result of the SRCC for TD on variance of image brightness: {}".format
 # Show graphs
 # Choose a graph
 plt.xlabel("Weighted Variance of Fixmap")
-if sys.argv[1] == "tdb":
+if len(sys.argv) < 2:
+	print("No graph.")
+elif sys.argv[1] == "tdb":
 	plt.title("TD")
 	plt.ylabel("Mean Brightness of Image")
 	plt.plot(data["td_var"], data["im_brightness"], "o")

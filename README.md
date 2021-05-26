@@ -8,7 +8,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ## Running
-Simply run the `aggregate.py` file in the `src/` folder in order to collect the data. Then, run the `results.py` file to display results. When running the `results.py` file, add any of the following cli arguments in order to generate a graph:
+Simply run the `aggregate.py` file in the `src/` folder in order to collect the data. Then, run the `results.py` file to display results. Make sure to be on the `src/` path while running the two programs. When running the `results.py` file, add any of the following cli arguments in order to generate a graph:
 - tdb - Graph the scatter plot of Mean Brightness of Image and Weighted Variance of the TD Fixmaps.
 - tdv - Graph the scatter plot of Variance of Brightness of Image and Weighted Variance of the TD Fixmaps.
 - asdb - Graph the scatter plot of Mean Brightness of Image and Weighted Variance of the ASD Fixmaps.
